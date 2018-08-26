@@ -20,7 +20,7 @@ public class WebmodelApplication {
 		employee.setId(1);
 		employee.setName("Raphael");
 		companyService.addEmployee(employee);
-		companyService.listEmployees().forEach(System.out::println);
+		//companyService.listEmployees().forEach(System.out::println);
 	}
 
 	public static void main(String[] args) {

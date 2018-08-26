@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 
 import java.util.Collection;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Controller
@@ -24,11 +25,11 @@ public class CompanyDao implements ICompanyDao {
 
     }
 
-    public Collection<Employee> listEmployees() {
-        return employees.values();
+    public Optional<Collection<Employee>> listEmployees() {
+        return Optional.of(employees.values());
     }
 
-    public Employee getEmployeeById(long employeeId) {
-        return null;
+    public Optional<Employee> getEmployeeById(long employeeId) {
+        return Optional.ofNullable(employees.get(employeeId));
     }
 }

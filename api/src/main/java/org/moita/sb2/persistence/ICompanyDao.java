@@ -3,6 +3,7 @@ package org.moita.sb2.persistence;
 import org.moita.sb2.model.Employee;
 
 import java.util.Collection;
+import java.util.Optional;
 
 public interface ICompanyDao {
 
@@ -12,7 +13,7 @@ public interface ICompanyDao {
 
     void updateEmployee(Employee employee);
 
-    Collection<Employee> listEmployees();
+    Optional<Collection<Employee>> listEmployees();
 
-    Employee getEmployeeById(long employeeId);
+    Optional<Employee> getEmployeeById(long employeeId);
 }
