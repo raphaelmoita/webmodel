@@ -16,8 +16,9 @@ public class SimpleCompanyService implements CompanyService {
     private ICompanyDao companyDao;
 
     public Collection<Employee> listEmployees() {
-        Optional<Collection<Employee>> employees = companyDao.listEmployees();
-        return employees.orElseThrow(EmployeeNotFoundException::new);
+        throw new EmployeeNotFoundException("opssss");
+//        Optional<Collection<Employee>> employees = companyDao.listEmployees();
+//        return employees.orElseThrow(EmployeeNotFoundException::new);
     }
 
     public void addEmployee(Employee employee) {

@@ -25,6 +25,8 @@
         <module>service</module>
         <module>rest</module>
         <module>web</module>
+        <module>security</module>
+        <module>config</module>
         <module>app</module>
     </modules>
 

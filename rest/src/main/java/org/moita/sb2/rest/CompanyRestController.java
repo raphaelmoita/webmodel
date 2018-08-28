@@ -30,7 +30,7 @@ public class CompanyRestController {
     }
 
     @GetMapping("/listar/{employeeId}")
-    public Employee getEmployeeById(long employeeId) {
+    public Employee getEmployeeById(Long employeeId) {
         return companyService.getEmployeeById(employeeId);
     }
 

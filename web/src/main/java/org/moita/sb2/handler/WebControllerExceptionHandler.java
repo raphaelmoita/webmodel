@@ -8,17 +8,20 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 @ControllerAdvice
-public class ExceptionHandlerController {
+public class WebControllerExceptionHandler {
 
-    public static final String DEFAULT_ERROR_VIEW = "err";
+    private static final String DEFAULT_ERROR_VIEW = "err";
+    private static final String datetime = "datetime";
+    private static final String exception = "exception";
+    private static final String url = "url";
 
     @ExceptionHandler(value = {Exception.class, RuntimeException.class})
     public ModelAndView defaultErrorHandler(HttpServletRequest request, Exception e) {
             ModelAndView mav = new ModelAndView(DEFAULT_ERROR_VIEW);
 
-        mav.addObject("datetime", new Date());
-        mav.addObject("exception", e);
-        mav.addObject("url", request.getRequestURL());
+        mav.addObject(datetime, new Date());
+        mav.addObject(exception, e);
+        mav.addObject(url, request.getRequestURL());
         return mav;
     }
 }
