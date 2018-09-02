@@ -16,12 +16,12 @@
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/webmodeldb"/>
                 <property name="username" value="webmodel"/>
-                <property name="password" value="w3bm0d3l"/>
+                <property name="password" value="********"/>
             </dataSource>
         </environment>
     </environments>
 
     <mappers>
-        <mapper resource="EmployeeMapper.xml"/>
+        <mapper resource="mappers/EmployeeMapper.xml"/>
     </mappers>
 </configuration>
