@@ -19,14 +19,14 @@
     <description>Web Model Project</description>
 
     <modules>
+        <module>config</module>
+        <module>security</module>
         <module>model</module>
         <module>api</module>
         <module>persistence</module>
         <module>service</module>
         <module>rest</module>
         <module>web</module>
-        <module>security</module>
-        <module>config</module>
         <module>app</module>
     </modules>
 
@@ -42,16 +42,23 @@
         <rest.version>0.0.1-SNAPSHOT</rest.version>
         <web.version>0.0.1-SNAPSHOT</web.version>
         <app.version>0.0.1-SNAPSHOT</app.version>
+        <config.version>0.0.1-SNAPSHOT</config.version>
 
         <webjars-locator.version>0.34</webjars-locator.version>
         <bootstrap.version>4.1.3</bootstrap.version>
         <guava.version>18.0</guava.version>
+        <mybatis-spring.version>1.3.2</mybatis-spring.version>
+        <mybatis.version>3.4.6</mybatis.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,8 +1,6 @@
 package org.moita.sb2.handler;
 
-import org.moita.sb2.exception.CompanyNotFoundException;
 import org.moita.sb2.exception.EmployeeNotFoundException;
-import org.moita.sb2.rest.CompanyRestController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -25,11 +23,4 @@ public class RestControllerExceptionHandler extends ResponseEntityExceptionHandl
     ApiError error = new ApiError(HttpStatus.NOT_FOUND, ex.getLocalizedMessage(), ex);
     return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
   }
-
-  @ExceptionHandler(CompanyNotFoundException.class)
-  public final ResponseEntity<ApiError> handleCompanyNotFoundException(CompanyNotFoundException ex, WebRequest request) {
-    ApiError error = new ApiError(HttpStatus.NOT_FOUND, ex.getLocalizedMessage(), ex);
-    return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
-  }
-
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.moita.sb2.mapper.EmployeeMapper" >
+    
+    <resultMap id="employee" type="org.moita.sb2.model.Employee">
+        <id property="id" column="id" />
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <select id="findAllEmployees" resultMap="employee">
+        SELECT id, name from employee
+    </select>
+    
+    <select id="findEmployeeById" resultType="employee">
+        SELECT id, name from employee WHERE id = #{id}
+    </select>
+    
+    <insert id="insertEmployee" parameterType="employee">
+        INSERT into employee(id, name) VALUES(#{id}, #{name})
+    </insert>
+
+    <update id="updateEmployee" parameterType="employee">
+        UPDATE employee SET name = #{name} WHERE id = #{id}
+    </update>
+
+    <delete id="removeEmployee">
+        DELETE FROM employee WHERE id = #{id}
+    </delete>
+
+</mapper> 

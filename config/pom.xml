@@ -11,8 +11,16 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.moita.sb2</groupId>
     <artifactId>config</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${config.version}</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.moita.sb2</groupId>
+            <artifactId>model</artifactId>
+            <version>${model.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

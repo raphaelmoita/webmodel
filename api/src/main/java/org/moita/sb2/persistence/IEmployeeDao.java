@@ -5,11 +5,11 @@ import org.moita.sb2.model.Employee;
 import java.util.Collection;
 import java.util.Optional;
 
-public interface ICompanyDao {
+public interface IEmployeeDao {
 
     void addEmployee(Employee employee);
 
-    void removeEmployee(Employee employee);
+    void removeEmployee(long employeeId);
 
     void updateEmployee(Employee employee);
 

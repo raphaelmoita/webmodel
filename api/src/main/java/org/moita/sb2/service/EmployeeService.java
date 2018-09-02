@@ -4,13 +4,13 @@ import org.moita.sb2.model.Employee;
 
 import java.util.Collection;
 
-public interface CompanyService {
+public interface EmployeeService {
 
     Collection<Employee> listEmployees();
 
     void addEmployee(Employee employee);
 
-    void removeEmployee(Employee employee);
+    void removeEmployee(long employeeId);
 
     Employee getEmployeeById(long employeeId);
 
