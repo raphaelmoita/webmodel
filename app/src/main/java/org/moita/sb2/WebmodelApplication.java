@@ -21,6 +21,7 @@ public class WebmodelApplication {
 		employee.setName("Raphael");
 //		employeeService.addEmployee(employee);
 //		employeeService.listEmployees().forEach(System.out::println);
+//		employeeService.insertDummy();
 	}
 
 	public static void main(String[] args) {

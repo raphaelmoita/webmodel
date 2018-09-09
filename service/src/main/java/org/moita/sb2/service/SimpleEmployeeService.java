@@ -36,4 +36,8 @@ public class SimpleEmployeeService implements EmployeeService {
     public void updateEmployee(Employee employee) {
         employeeDao.updateEmployee(employee);
     }
+
+    public void insertDummy() {
+        employeeDao.insertDummy();
+    }
 }

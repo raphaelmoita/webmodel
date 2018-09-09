@@ -12,19 +12,14 @@
     </parent>
 
     <artifactId>service</artifactId>
-    <version>${service.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.moita.sb2</groupId>
-            <artifactId>api</artifactId>
-            <version>${api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.moita.sb2</groupId>
             <artifactId>persistence</artifactId>
-            <version>${persistence.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

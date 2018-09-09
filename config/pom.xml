@@ -12,14 +12,14 @@
     </parent>
 
     <artifactId>config</artifactId>
-    <version>${config.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.moita.sb2</groupId>
             <artifactId>model</artifactId>
-            <version>${model.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

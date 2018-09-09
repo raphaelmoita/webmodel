@@ -16,7 +16,7 @@
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/webmodeldb"/>
                 <property name="username" value="webmodel"/>
-                <property name="password" value="********"/>
+                <property name="password" value="w3bm0d3l"/>
             </dataSource>
         </environment>
     </environments>

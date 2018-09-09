@@ -19,4 +19,6 @@ public interface EmployeeMapper {
 
     Employee findEmployeeById(@Param("id") Long employeeId);
 
+    void insertDummy();
+
 }

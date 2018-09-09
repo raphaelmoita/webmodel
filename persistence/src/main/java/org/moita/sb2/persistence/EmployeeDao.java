@@ -56,4 +56,11 @@ public class EmployeeDao implements IEmployeeDao {
             return Optional.ofNullable(mapper.findEmployeeById(employeeId));
         }
     }
+
+    public void insertDummy() {
+        try (SqlSession openSession = session.openSession()) {
+            EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
+            mapper.insertDummy();
+        }
+    }
 }

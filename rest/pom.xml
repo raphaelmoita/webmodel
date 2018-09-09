@@ -12,24 +12,19 @@
     </parent>
 
     <artifactId>rest</artifactId>
-    <version>${rest.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>org.moita.sb2</groupId>
-            <artifactId>api</artifactId>
-            <version>${api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.moita.sb2</groupId>
             <artifactId>service</artifactId>
-            <version>${service.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.4</version>
+            <version>${jackson-databind.version}</version>
         </dependency>
     </dependencies>
 

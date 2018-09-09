@@ -16,4 +16,6 @@ public interface IEmployeeDao {
     Optional<Collection<Employee>> listEmployees();
 
     Optional<Employee> getEmployeeById(long employeeId);
+
+    void insertDummy();
 }

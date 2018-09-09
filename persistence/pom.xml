@@ -12,14 +12,14 @@
     </parent>
 
     <artifactId>persistence</artifactId>
-    <version>${persistence.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     
     <dependencies>
         <dependency>
             <groupId>org.moita.sb2</groupId>
             <artifactId>api</artifactId>
-            <version>${api.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
