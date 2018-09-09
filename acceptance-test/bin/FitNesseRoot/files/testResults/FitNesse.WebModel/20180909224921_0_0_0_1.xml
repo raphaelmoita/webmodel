@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20180127</FitNesseVersion>
+  <rootPath>FitNesse.WebModel</rootPath>
+  <pageHistoryReference>
+    <name>FitNesse.WebModel.Service</name>
+    <date>2018-09-09T22:49:21+02:00</date>
+    <pageHistoryLink>FitNesse.WebModel.Service?pageHistory&amp;resultDate=20180909224921</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>97</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>Slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /home/rmoita/dev/projects/webmodel/acceptance-test/bin/fitnesse-standalone.jar:/home/rmoita/dev/projects/webmodel/model/target/classes/model-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/security/target/classes/security-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/config/target/classes/config-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/api/target/classes/api-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/persistence/target/classes/persistence-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/rest/target/classes/rest-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/web/target/classes/web-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/service/target/classes/service-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/app/target/classes/app-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/acceptance-test/target/classes/acceptance-test-.0.1-SNAPSHOT.jar:lib/*.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>485</totalRunTimeInMillis>
+</suiteResults>
+

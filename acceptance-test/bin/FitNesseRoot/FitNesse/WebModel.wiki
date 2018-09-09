@@ -1,0 +1,23 @@
+---
+Suite
+---
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+!define COLLAPSE_SETUP {true}
+!define COLLAPSE_TEARDOWN {true}
+
+!path /home/rmoita/dev/projects/webmodel/model/target/classes/model-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/security/target/classes/security-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/config/target/classes/config-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/api/target/classes/api-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/persistence/target/classes/persistence-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/rest/target/classes/rest-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/web/target/classes/web-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/service/target/classes/service-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/app/target/classes/app-.0.1-SNAPSHOT.jar
+!path /home/rmoita/dev/projects/webmodel/acceptance-test/target/classes/acceptance-test-.0.1-SNAPSHOT.jar
+
+
+
+

@@ -1,0 +1,22 @@
+---
+Test
+---
+!define TEST_SYSTEM {Slim}
+
+!path /home/rmoita/dev/projects/webmodel/model/target/classes
+!path /home/rmoita/dev/projects/webmodel/security/target/classes
+!path /home/rmoita/dev/projects/webmodel/config/target/classes
+!path /home/rmoita/dev/projects/webmodel/api/target/classes
+!path /home/rmoita/dev/projects/webmodel/persistence/target/classes
+!path /home/rmoita/dev/projects/webmodel/rest/target/classes
+!path /home/rmoita/dev/projects/webmodel/web/target/classes
+!path /home/rmoita/dev/projects/webmodel/service/target/classes
+!path /home/rmoita/dev/projects/webmodel/app/target/classes
+!path /home/rmoita/dev/projects/webmodel/acceptance-test/target/classes
+
+|Import                          |
+|org.moita.sb2.acceptance.fixture|
+
+!|org.moita.sb2.acceptance.fixture.SimpleEmployeeServiceFixture|
+|listEmployees                 |listEmployees?                 |
+|aa                            |AA                             |

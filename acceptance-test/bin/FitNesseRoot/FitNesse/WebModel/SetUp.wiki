@@ -1,0 +1,6 @@
+!contents -R2 -g -p -f -h
+
+|Import                          |
+|org.moita.sb2.acceptance.fixture|
+
+#|Initialize System|

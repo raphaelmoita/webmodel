@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20180127</FitNesseVersion>
+  <rootPath>FitNesse.WebModel.Service</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>10</exceptions>
+    </counts>
+    <date>2018-09-09T22:41:13+02:00</date>
+    <runTimeInMillis>229</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.WebModel.SetUp"&gt;.FitNesse.WebModel.SetUp&lt;/a&gt; &lt;a href="FitNesse.WebModel.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fixtures.global&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fixtures.input&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fixtures.output&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fixtures.controller&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Initialize System &lt;span class="error"&gt;Could not invoke constructor for InitializeSystem[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=Slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="2"&gt;org.moita.sb2.service.SimpleEmployeeServiceFixture &lt;span class="error"&gt;Could not invoke constructor for org.moita.sb2.service.SimpleEmployeeServiceFixture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;listEmployees&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;aa &lt;span class="error"&gt;The instance decisionTable_2.setListEmployees. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;AA &lt;span class="error"&gt;The instance decisionTable_2.set. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;a2b &lt;span class="error"&gt;The instance decisionTable_2.setListEmployees. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;A2B &lt;span class="error"&gt;The instance decisionTable_2.set. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;bb &lt;span class="error"&gt;The instance decisionTable_2.setListEmployees. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;BB &lt;span class="error"&gt;The instance decisionTable_2.set. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;111 &lt;span class="error"&gt;The instance decisionTable_2.setListEmployees. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;java.lang.IllegalArgumentException&amp;lt;&amp;lt;Invalid input&amp;gt;&amp;gt; &lt;span class="error"&gt;The instance decisionTable_2.set. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>Service</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fixtures.global'}</instruction>
+        <slimResult>pass(fixtures.global)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fixtures.global</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='fixtures.input'}</instruction>
+        <slimResult>pass(fixtures.input)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fixtures.input</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='fixtures.output'}</instruction>
+        <slimResult>pass(fixtures.output)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fixtures.output</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='fixtures.controller'}</instruction>
+        <slimResult>pass(fixtures.controller)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fixtures.controller</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='InitializeSystem', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for InitializeSystem[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='org.moita.sb2.service.SimpleEmployeeServiceFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for org.moita.sb2.service.SimpleEmployeeServiceFixture[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setListEmployees', args=[aa]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setListEmployees. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='set', args=[AA]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.set. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_8', instruction='call', instanceName='decisionTable_2', methodName='setListEmployees', args=[a2b]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_8</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setListEmployees. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_9', instruction='call', instanceName='decisionTable_2', methodName='set', args=[A2B]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_9</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.set. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_12', instruction='call', instanceName='decisionTable_2', methodName='setListEmployees', args=[bb]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setListEmployees. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_13', instruction='call', instanceName='decisionTable_2', methodName='set', args=[BB]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_13</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.set. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_16', instruction='call', instanceName='decisionTable_2', methodName='setListEmployees', args=[111]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_16</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setListEmployees. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_17', instruction='call', instanceName='decisionTable_2', methodName='set', args=[java.lang.IllegalArgumentException&lt;&lt;Invalid input&gt;&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_17</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.set. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>Slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /home/rmoita/dev/projects/webmodel/acceptance-test/bin/fitnesse-standalone.jar:/home/rmoita/dev/projects/webmodel/model/target/classes/model-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/security/target/classes/security-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/config/target/classes/config-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/api/target/classes/api-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/persistence/target/classes/persistence-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/rest/target/classes/rest-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/web/target/classes/web-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/service/target/classes/service-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/app/target/classes/app-.0.1-SNAPSHOT.jar:/home/rmoita/dev/projects/webmodel/acceptance-test/target/classes/acceptance-test-.0.1-SNAPSHOT.jar:lib/*.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>624</totalRunTimeInMillis>
+</testResults>
+
