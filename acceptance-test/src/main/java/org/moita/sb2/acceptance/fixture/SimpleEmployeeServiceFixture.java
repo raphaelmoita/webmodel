@@ -14,14 +14,10 @@ public class SimpleEmployeeServiceFixture implements Fixture {
     private SimpleEmployeeService employeeService;
 
     public SimpleEmployeeServiceFixture() {
-        FixtureWirer.wire(this);
+        FixtureWirer.INSTANCE.wire(this);
     }
 
-    public String listEmployees() {
-        return "AA"; //return employeeService.listEmployees().toString();
-    }
-
-    public void setListEmployees(String employees) {
-
+    public Collection<Employee> listEmployees() {
+        return employeeService.listEmployees();
     }
 }
