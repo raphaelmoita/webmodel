@@ -19,9 +19,10 @@ public class SimpleEmployeeServiceFixture implements Fixture {
     private long id;
     private Employee employee;
 
-    public SimpleEmployeeServiceFixture() {
+    public SimpleEmployeeServiceFixture(String methods) {
         FixtureWirer.INSTANCE.wire(this);
         addConverter(Employee.class, new EmployeeConverter());
+        preProcess(methods);
     }
 
     public Collection<Employee> listEmployees() {
@@ -37,10 +38,20 @@ public class SimpleEmployeeServiceFixture implements Fixture {
         employeeService.addEmployee(this.employee);
     }
 
-    public void clean() {
+    private void clean() {
         Collection<Employee> employees = employeeService.listEmployees();
         employees.stream()
                 .map(Employee::getId)
                 .forEach(employeeService::removeEmployee);
+    }
+
+    private void preProcess(String methodNames) {
+        String[] methods = methodNames.split(",");
+        for (String method : methods) {
+            switch (method) {
+                case "clean":
+                    clean();
+            }
+        }
     }
 }

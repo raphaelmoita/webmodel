@@ -11,8 +11,8 @@ Test
 
                                                  |
 
-!|org.moita.sb2.acceptance.fixture.SimpleEmployeeServiceFixture|
-|employee                      |getEmployeeById?               |
-|4;Raphael;none                |4;Raphael                      |
-|5;Rapha;none                  |5;Rapha                        |
-|6;Joao;none                   |6;Joao                         |
+!|org.moita.sb2.acceptance.fixture.SimpleEmployeeServiceFixture|clean,test      |
+|employee                                                      |getEmployeeById?|
+|4;Raphael;none                                                |4;Raphael       |
+|5;Rapha;none                                                  |5;Rapha         |
+|6;Joao;none                                                   |6;Joao          |
