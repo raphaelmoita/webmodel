@@ -7,9 +7,12 @@ import org.moita.sb2.model.Employee;
 import org.moita.sb2.service.SimpleEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import static fitnesse.slim.converters.ConverterRegistry.addConverter;
+import static java.util.Arrays.asList;
 
 public class SimpleEmployeeServiceFixture implements Fixture {
 
@@ -54,4 +57,33 @@ public class SimpleEmployeeServiceFixture implements Fixture {
             }
         }
     }
+
+    public List<List<List<String>>> query() {
+        List<List<List<String>>> result = new ArrayList<>();
+        listEmployees().forEach(e -> {
+                        result.add(asList( // row level
+                                asList("id", String.valueOf(e.getId())),
+                                asList("name", e.getName())));
+                        });
+        return result;
+    }
+
+//    public List<List<List<String>>> _query() {
+//
+//        return
+//                asList( // table level
+//                        asList( // row level
+//                                asList("id", "4"),
+//                                asList("name", "Raphael")
+//                        ),
+//                        asList(
+//                                asList("id", "5"),
+//                                asList("name", "Rapha")
+//                        ),
+//                        asList(
+//                                asList("id", "6"),
+//                                asList("name", "Joao")
+//                        )
+//                );
+//    }
 }
