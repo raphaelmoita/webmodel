@@ -1,7 +1,9 @@
 sudo apt-get install mysql-server
+
 sudo mysql -u root -p
 MariaDB> create database webmodeldb;
 MariaDB> create user 'webmodel'@localhost identified by 'w3bm0d3l';
 MariaDB> GRANT ALL privileges ON webmodeldb.* to webmodel@localhost;
 MariaDB> FLUSH PRIVILEGES;
 MariaDB> CREATE TABLE employee (id INTEGER NOT null, name VARCHAR(255) NOT null, PRIMARY KEY(id));
+MariaDB> use webmodeldb;
