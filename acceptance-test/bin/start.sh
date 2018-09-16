@@ -7,4 +7,4 @@ for jar in $(ls /home/rmoita/dev/projects/webmodel/acceptance-test/target/depend
     CLASSPATH="${CLASSPATH}:${jar}"
 done
 
-java -jar bin/fitnesse-standalone.jar -p 8888 -d bin/
+java -jar bin/fitnesse-standalone.jar -p 8888 -d bin/ -e 0 -l bin/logs

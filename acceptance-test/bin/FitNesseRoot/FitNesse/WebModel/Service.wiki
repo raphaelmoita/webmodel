@@ -1,18 +1,24 @@
 ---
 Test
 ---
-!define TEST_SYSTEM {Slim}
+!include -setup ConfigurationSetUp
 
-!path /home/rmoita/dev/projects/webmodel/acceptance-test/target/dependencies/*.jar
-!path /home/rmoita/dev/projects/webmodel/acceptance-test/target/*.jar
+!***< Hidden
+!define MY_NAME {Raphael}
+*!
 
-|Import                          |
-|org.moita.sb2.acceptance.fixture|
+!*** Section X
+!img https://cdn0.iconfinder.com/data/icons/emoticons-round-smileys/137/Emoticons-16-128.png
+*!N
 
-                                                 |
+!|Simple Employee Service Fixture|clean,test      |
+|employee                        |getEmployeeById?|
+|4;Raphael;none                  |4;${MY_NAME}    |
+|5;Rapha;none                    |5;Rapha         |
+|6;Joao;none                     |6;Joao          |
 
-!|org.moita.sb2.acceptance.fixture.SimpleEmployeeServiceFixture|clean,test      |
-|employee                                                      |getEmployeeById?|
-|4;Raphael;none                                                |4;Raphael       |
-|5;Rapha;none                                                  |5;Rapha         |
-|6;Joao;none                                                   |6;Joao          |
+|Query:Simple Employee Service Fixture|test      |
+|id                                   |name      |
+|4                                    |${MY_NAME}|
+|5                                    |Rapha     |
+|6                                    |Joao      |
