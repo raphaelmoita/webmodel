@@ -1,0 +1,8 @@
+# to affect all JVMs. Passing spring.profiles.active=fitnesse as JMV parameter when start Fitnesse will
+#  reflect only in the Fitnesse JVM.
+
+export SPRING_PROFILES_ACTIVE=fitnesse
+
+
+
+http://localhost:8888/FitNesse.WebModel.Service

@@ -4,7 +4,7 @@ import org.moita.sb2.acceptance.base.Fixture;
 import org.moita.sb2.acceptance.base.FixtureWirer;
 import org.moita.sb2.acceptance.converter.EmployeeConverter;
 import org.moita.sb2.model.Employee;
-import org.moita.sb2.service.SimpleEmployeeService;
+import org.moita.sb2.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import static java.util.Arrays.asList;
 public class SimpleEmployeeServiceFixture implements Fixture {
 
     @Autowired
-    private SimpleEmployeeService employeeService;
+    private EmployeeService employeeService;
 
     private long id;
     private Employee employee;
