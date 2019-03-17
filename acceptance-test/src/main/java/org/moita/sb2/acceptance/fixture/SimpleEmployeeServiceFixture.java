@@ -1,7 +1,6 @@
 package org.moita.sb2.acceptance.fixture;
 
-import org.moita.sb2.acceptance.base.Fixture;
-import org.moita.sb2.acceptance.base.FixtureWirer;
+import org.moita.sb2.acceptance.base.AbstractFixture;
 import org.moita.sb2.acceptance.converter.EmployeeConverter;
 import org.moita.sb2.model.Employee;
 import org.moita.sb2.service.EmployeeService;
@@ -11,10 +10,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static fitnesse.slim.converters.ConverterRegistry.addConverter;
 import static java.util.Arrays.asList;
 
-public class SimpleEmployeeServiceFixture implements Fixture {
+public class SimpleEmployeeServiceFixture extends AbstractFixture {
 
     @Autowired
     private EmployeeService employeeService;
@@ -23,9 +21,7 @@ public class SimpleEmployeeServiceFixture implements Fixture {
     private Employee employee;
 
     public SimpleEmployeeServiceFixture(String methods) {
-        FixtureWirer.INSTANCE.wire(this);
-        addConverter(Employee.class, new EmployeeConverter());
-        preProcess(methods);
+        super(methods);
     }
 
     public Collection<Employee> listEmployees() {
@@ -41,21 +37,12 @@ public class SimpleEmployeeServiceFixture implements Fixture {
         employeeService.addEmployee(this.employee);
     }
 
-    private void clean() {
+    @Override
+    public void clean() {
         Collection<Employee> employees = employeeService.listEmployees();
         employees.stream()
                 .map(Employee::getId)
                 .forEach(employeeService::removeEmployee);
-    }
-
-    private void preProcess(String methodNames) {
-        String[] methods = methodNames.split(",");
-        for (String method : methods) {
-            switch (method) {
-                case "clean":
-                    clean();
-            }
-        }
     }
 
     public List<List<List<String>>> query() {

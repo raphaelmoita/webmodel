@@ -1,6 +1,7 @@
-package org.moita.sb2.service;
+package org.moita.sb2.acceptance.service;
 
 import org.moita.sb2.model.Employee;
+import org.moita.sb2.service.EmployeeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

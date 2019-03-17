@@ -8,7 +8,7 @@ import static fitnesse.slim.converters.ConverterRegistry.addConverter;
 public abstract class AbstractFixture implements Fixture {
 
     public AbstractFixture(String methods) {
-//        FixtureWirer.INSTANCE.wire(this);
+        FixtureWirer.INSTANCE.wire(this);
         addConverter(Employee.class, new EmployeeConverter());
         preProcess(methods);
     }

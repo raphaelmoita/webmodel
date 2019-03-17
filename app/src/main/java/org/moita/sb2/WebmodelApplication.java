@@ -7,12 +7,12 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class WebmodelApplication {
 
-    public ApplicationContext run(String[] args)
+    public static ApplicationContext run(String[] args)
     {
         return SpringApplication.run(WebmodelApplication.class, args);
     }
 
 	public static void main(String[] args) {
-		new WebmodelApplication().run(args);
+		run(args);
 	}
 }
