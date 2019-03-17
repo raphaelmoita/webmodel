@@ -61,6 +61,7 @@ public class EmployeeDao implements IEmployeeDao {
         try (SqlSession openSession = session.openSession()) {
             EmployeeMapper mapper = openSession.getMapper(EmployeeMapper.class);
             mapper.insertDummy();
+            openSession.commit();
         }
     }
 }

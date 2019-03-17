@@ -30,12 +30,8 @@
         DELETE FROM employee WHERE id = #{id}
     </delete>
 
-    <insert id="insertDummy" parameterType="employee" statementType="CALLABLE">
-        begin
-            INSERT into employee(id, name) VALUES(101, 'dummy1');
-            INSERT into employee(id, name) VALUES(102, 'dummy2');
-            INSERT into employee(id, name) VALUES(103, 'dummy3');
-        end;
+    <insert id="insertDummy" statementType="CALLABLE">
+        INSERT INTO employee(id, name) VALUES (101, 'dummy1');
     </insert>
 
 </mapper> 
