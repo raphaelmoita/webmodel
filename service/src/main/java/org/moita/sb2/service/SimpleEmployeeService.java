@@ -4,13 +4,14 @@ import org.moita.sb2.exception.EmployeeNotFoundException;
 import org.moita.sb2.model.Employee;
 import org.moita.sb2.persistence.IEmployeeDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Controller;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Optional;
 
-@Controller
+@Service
+@Profile("default")
 public class SimpleEmployeeService implements EmployeeService {
 
     @Autowired
@@ -35,7 +36,7 @@ public class SimpleEmployeeService implements EmployeeService {
     }
 
     public void updateEmployee(Employee employee) {
-        employeeDao.updateEmployee(employee);
+            employeeDao.updateEmployee(employee);
     }
 
     public void insertDummy() {
