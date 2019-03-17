@@ -1,0 +1,44 @@
+=====================
+REST CLIENT FOR UNIX
+=====================
+https://insomnia.rest/
+
+==============
+ADD
+==============
+POST:
+http://localhost:8080/rest/employee/add
+
+JSON:
+{
+	"id" : 1,
+	"name" : "Rapha"
+}
+
+==============
+FIND BY ID
+==============
+GET:
+http://localhost:8080/rest/employee/list/<employee_id>
+
+==============
+FIND ALL
+==============
+GET:
+http://localhost:8080/rest/employee/list
+
+==============
+DELETE
+==============
+DELETE:
+http://localhost:8080/rest/employee/remove/<employee_id>
+
+==============
+UPDATE NAME
+==============
+PUT:
+http://localhost:8080/rest/employee/update
+{
+	"id" : 1,
+	"name" : "New Employee Name ..."
+}
