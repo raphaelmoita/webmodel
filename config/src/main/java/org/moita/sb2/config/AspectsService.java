@@ -3,13 +3,12 @@ package org.moita.sb2.config;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 
 @Aspect
-@Controller
+@Configuration
 public class AspectsService
 {
 	
@@ -32,7 +31,7 @@ public class AspectsService
 		System.out.println("[executed in " + executionTime + "ms] " + joinPoint.getSignature());
 		return proceed;
 	}
-	
+
 //	@Around("execution(* org.moita.sb2.service.SimpleCompanyService.getEmployeeById(..))")
 //	public Object enrich(ProceedingJoinPoint joinPoint) throws Throwable {
 //		Object proceed = joinPoint.proceed(this.enrichItemDescription(joinPoint.getArgs(), 0));
