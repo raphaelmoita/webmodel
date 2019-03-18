@@ -7,21 +7,18 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class FixtureWirer {
 
-    private static final String[] ARGS = {"fitness"};
+    static final String[] EMPTY = new String[0];
 
     public static FixtureWirer INSTANCE = new FixtureWirer();
 
-    private ApplicationContext applicationContext;
-
     private AutowireCapableBeanFactory beanFactory;
 
-    public void wire(Fixture fixture) {
+    private FixtureWirer() {
+        ApplicationContext applicationContext = WebmodelApplication.run(EMPTY);
+        beanFactory = applicationContext.getAutowireCapableBeanFactory();
+    }
 
-        if (applicationContext == null) {
-            applicationContext = WebmodelApplication.run(ARGS);
-            beanFactory = applicationContext.getAutowireCapableBeanFactory();
-        }
-
+    public synchronized void wire(Fixture fixture) {
         beanFactory.autowireBeanProperties(fixture, AutowireCapableBeanFactory.AUTOWIRE_BY_NAME, false);
         beanFactory.autowireBean(fixture);
         beanFactory.initializeBean(fixture, fixture.getClass().getName());
